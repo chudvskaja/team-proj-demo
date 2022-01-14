@@ -1,5 +1,31 @@
-.hello {
-    font-family: 'Titan One', cursive;
-    font-size: 30px;
-    color: tomato;
+.header {
+  background-color: $lightPinkColor;
+}
+.header__section {
+  position: relative;
+  justify-content: space-between;
+  padding-top: 6px;
+  display: flex;
+  @media screen and (max-width: 630px) {
+    overflow: hidden;
+  }
+}
+.navigation__list {
+  display: flex;
+  margin-right: -35px;
+  @media screen and(max-width:1199.5px) {
+    display: none;
+  }
+}
+.navgation__item {
+  margin-right: 35px;
+}
+.header__btn {
+  width: 160px;
+  height: 44px;
+  background: $whiteTextColor;
+  border-radius: 22px;
+  @media screen and(max-width:767.5px) {
+    display: none;
+  }
 }
