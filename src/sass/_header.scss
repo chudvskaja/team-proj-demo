@@ -1,10 +1,11 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  @media screen and (min-width: 320px) {
-    width: 320px;
-    height: 502px;
+  width: 320px;
+  height: 502px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -22,12 +23,14 @@
   justify-content: space-between;
   padding-top: 6px;
   display: flex;
-  overflow: hidden;
+  @media screen and (max-width: 630px) {
+    overflow: hidden;
+  }
 }
 .header__box {
   position: absolute;
   top: 83px;
-  left: 36px;
+  right: -62px;
   width: 346px;
   height: 344px;
   @media screen and (min-width: 768px) {
