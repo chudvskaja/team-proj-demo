@@ -1,33 +1,5 @@
 @charset "UTF-8";
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
-}
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
-}
-
-.example .background {
-  height: 240px;
-  background-image: url("../images/demo.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 .contacts {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fff), color-stop(10%, #fff5f6), color-stop(90%, #fff5f6));
@@ -104,5 +76,77 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+=======
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+@font-face {
+  font-family: 'DM Sans Medium';
+  src: url("../fonts/dm-sans/dm-sans-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
 }
+
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: url("../fonts/dm-sans/dm-sans-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+@font-face {
+  font-family: 'DM Sans Regular';
+  src: url("../fonts/dm-sans/dm-sans-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+@font-face {
+  font-family: 'Titan One';
+  src: url("../fonts/titan-one/titan-one.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+.title {
+  font-family: 'DM Sans Bold', sans-serif;
+  font-size: 30px;
+  line-height: 1.17;
+  color: #D41443;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

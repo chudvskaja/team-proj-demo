@@ -4,5 +4,19 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
-@import './contacts';
+
+@import './utils/font-dm-sans';
+@import './utils/font-titan-one';
+@import './utils/variables';
+@import './components/about';
+@import './components/advantages';
+@import './components/contacts';
+@import './components/container';
+@import './components/customer-reviews';
+@import './components/footer';
+@import './components/gallery';
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+
+
