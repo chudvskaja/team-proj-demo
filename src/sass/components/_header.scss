@@ -1,0 +1,32 @@
+.header {
+  background-color: $lightPinkColor;
+  position: absolute;
+  z-index: 90;
+}
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+.navigation__list {
+  display: flex;
+  margin-right: -35px;
+  @media screen and(max-width:1199.5px) {
+    display: none;
+  }
+}
+.navgation__item {
+  margin-right: 35px;
+}
+.mobile-menu-btn {
+  margin-left: auto;
+}
+.header__btn {
+  width: 160px;
+  height: 44px;
+  background: $whiteTextColor;
+  border-radius: 22px;
+  @media screen and(max-width:767.5px) {
+    display: none;
+  }
+}

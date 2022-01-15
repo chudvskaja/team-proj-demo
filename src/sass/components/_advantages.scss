@@ -1,0 +1,62 @@
+.advantages {
+    background-color: $primaryBgColor;
+    padding-top: 39px;
+    padding-bottom: 97px;
+
+}
+
+.facts {
+    font-family: 'Titan One', cursiv;
+    font-size: 36px;
+    line-height: 1.14;
+    color: $accentColor;
+    display: block;
+    width: 98px;
+    margin-bottom: 20px;
+}
+
+.advantage-description {
+    font-family: 'DM Sans Bold';
+    font-size: 12px;
+    line-height: 1.7;
+    color: $blackTextColor;
+    display: inline-block;
+    width: 230px;
+
+}
+
+.advantages-item {
+    display: block;
+    width: 98px;
+}
+
+.advantage-item:not(:last-child) {
+    margin-bottom: 38px;
+}
+
+.advantage-item::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-color: $primaryBgColor;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .cup-milk::before {
+    background-image: url(/images/adv1.png);
+    background-size: 33px 50px;
+  }
+
+  .cup-apple::before {
+    background-image: url(/images/adv2.png);
+    background-size: 50px 50px;
+  }
+
+  .cup-heart::before {
+    background-image: url(/images/adv3.png);
+    background-size: 44px 50px;
+  }
