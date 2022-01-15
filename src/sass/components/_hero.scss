@@ -1,0 +1,22 @@
+.hero__box {
+  position: absolute;
+  top: 83px;
+  right: -62px;
+  width: 346px;
+  height: 344px;
+  @media screen and (min-width: 768px) {
+    top: 31px;
+    left: 306px;
+  }
+
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: $titlePinkColor;
+}
+
+.hero-icecream__img {
+  position: absolute;
+  top: 9px;
+  left: 81px;
+}

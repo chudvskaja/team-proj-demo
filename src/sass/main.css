@@ -1,5 +1,50 @@
 @charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+@font-face {
+  font-family: 'DM Sans Medium';
+  src: url("../fonts/dm-sans/dm-sans-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
 
+@font-face {
+  font-family: 'DM Sans Bold';
+  src: url("../fonts/dm-sans/dm-sans-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+@font-face {
+  font-family: 'DM Sans Regular';
+  src: url("../fonts/dm-sans/dm-sans-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+@font-face {
+  font-family: 'Titan One';
+  src: url("../fonts/titan-one/titan-one.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+.title {
+  font-family: 'DM Sans Bold', sans-serif;
+  font-size: 30px;
+  line-height: 1.17;
+  color: #D41443;
+}
 
 .contacts {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fff), color-stop(10%, #fff5f6), color-stop(90%, #fff5f6));
@@ -76,52 +121,6 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
-=======
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-@font-face {
-  font-family: 'DM Sans Medium';
-  src: url("../fonts/dm-sans/dm-sans-medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
-}
-
-@font-face {
-  font-family: 'DM Sans Bold';
-  src: url("../fonts/dm-sans/dm-sans-regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
-}
-
-@font-face {
-  font-family: 'DM Sans Regular';
-  src: url("../fonts/dm-sans/dm-sans-bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2212;
-}
-
-@font-face {
-  font-family: 'Titan One';
-  src: url("../fonts/titan-one/titan-one.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-00FE;
-}
-
-.title {
-  font-family: 'DM Sans Bold', sans-serif;
-  font-size: 30px;
-  line-height: 1.17;
-  color: #D41443;
 }
 
 .container {
@@ -149,4 +148,77 @@
   }
 }
 
+.header {
+  background-color: #FFB8CA;
+}
+
+.header__section {
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 630px) {
+  .header__section {
+    overflow: hidden;
+  }
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -35px;
+}
+
+@media screen and (max-width: 1199.5px) {
+  .navigation__list {
+    display: none;
+  }
+}
+
+.navgation__item {
+  margin-right: 35px;
+}
+
+.header__btn {
+  width: 160px;
+  height: 44px;
+  background: #FFFFFF;
+  border-radius: 22px;
+}
+
+@media screen and (max-width: 767.5px) {
+  .header__btn {
+    display: none;
+  }
+}
+
+.hero__box {
+  position: absolute;
+  top: 83px;
+  right: -62px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background: #FFA5BA;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__box {
+    top: 31px;
+    left: 306px;
+  }
+}
+
+.hero-icecream__img {
+  position: absolute;
+  top: 9px;
+  left: 81px;
+}
 /*# sourceMappingURL=main.css.map */
