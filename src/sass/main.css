@@ -150,10 +150,11 @@
 
 .header {
   background-color: #FFB8CA;
+  position: absolute;
+  z-index: 90;
 }
 
 .header__section {
-  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -161,12 +162,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 630px) {
-  .header__section {
-    overflow: hidden;
-  }
 }
 
 .navigation__list {
@@ -186,6 +181,10 @@
   margin-right: 35px;
 }
 
+.mobile-menu-btn {
+  margin-left: auto;
+}
+
 .header__btn {
   width: 160px;
   height: 44px;
@@ -197,6 +196,17 @@
   .header__btn {
     display: none;
   }
+}
+
+.hero {
+  background-color: #FFB8CA;
+  position: relative;
+  padding-top: 58.4px;
+  height: 502px;
+  overflow: hidden;
+  /*@media screen and (max-width: 768px) {
+    overflow: hidden;
+  }*/
 }
 
 .hero__box {
@@ -214,6 +224,35 @@
     top: 31px;
     left: 306px;
   }
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 218px;
+}
+
+.hero__text {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero__text--different {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 0.96;
+  text-transform: uppercase;
+  color: #D41443;
 }
 
 .hero-icecream__img {
