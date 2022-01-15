@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
 
+    
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -17,6 +18,13 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+
+    &-advantage {
+      padding-left:100px;
+      padding-right:100px;
+    }
+  }
   }
 
-}
+  
+
