@@ -1,14 +1,12 @@
 .header {
   background-color: $lightPinkColor;
+  position: absolute;
+  z-index: 90;
 }
 .header__section {
-  position: relative;
   justify-content: space-between;
   padding-top: 6px;
   display: flex;
-  @media screen and (max-width: 630px) {
-    overflow: hidden;
-  }
 }
 .navigation__list {
   display: flex;
@@ -19,6 +17,9 @@
 }
 .navgation__item {
   margin-right: 35px;
+}
+.mobile-menu-btn {
+  margin-left: auto;
 }
 .header__btn {
   width: 160px;
