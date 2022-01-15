@@ -1,5 +1,7 @@
 .header {
   background-color: $lightPinkColor;
+  position: absolute;
+  z-index: 90;
 }
 .header__section {
   position: relative;

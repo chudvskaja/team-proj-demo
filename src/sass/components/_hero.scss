@@ -1,3 +1,8 @@
+.hero {
+  background-color: $lightPinkColor;
+  position: relative;
+  height: 502px;
+}
 .hero__box {
   position: absolute;
   top: 83px;
@@ -9,8 +14,6 @@
     left: 306px;
   }
 
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   background: $titlePinkColor;
 }

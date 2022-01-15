@@ -150,6 +150,8 @@
 
 .header {
   background-color: #FFB8CA;
+  position: absolute;
+  z-index: 90;
 }
 
 .header__section {
@@ -197,6 +199,12 @@
   .header__btn {
     display: none;
   }
+}
+
+.hero {
+  background-color: #FFB8CA;
+  position: relative;
+  height: 502px;
 }
 
 .hero__box {
