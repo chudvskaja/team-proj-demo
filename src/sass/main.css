@@ -148,6 +148,12 @@
   }
 }
 
+.reviews__title {
+  font-family: 'DM Sans Medium';
+  color: #D41443;
+}
+
+
 .header {
   background-color: #FFB8CA;
   position: absolute;
