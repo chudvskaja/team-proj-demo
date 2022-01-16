@@ -6,6 +6,7 @@
         "utils/_font-dm-sans.scss",
         "utils/_font-titan-one.scss",
         "utils/_variables.scss",
+        "utils/_reset.scss",
         "components/_about.scss",
         "components/_advantages.scss",
         "components/_contacts.scss",
@@ -15,7 +16,10 @@
         "components/_gallery.scss",
         "components/_header.scss",
         "components/_hero.scss",
-        "components/_products.scss"
+        "components/_products.scss",
+        "components/_modal-hero.scss",
+        "components/_mobile-menu.scss",
+        "components/_button.scss"
     ],
     "names": [],
     "file": "main.css"

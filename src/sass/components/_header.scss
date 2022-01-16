@@ -1,5 +1,38 @@
-.hello {
-    font-family: 'Titan One', cursive;
-    font-size: 30px;
-    color: tomato;
+.header {
+  background-color: transparent;
+  position: absolute;
+  z-index: 90;
+  right: 0;
+  left: 0;
+}
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+}
+.navigation__list {
+  display: flex;
+  margin-right: -35px;
+  @media screen and(max-width:1199.5px) {
+    display: none;
+  }
+}
+.navgation__item {
+  margin-right: 35px;
+}
+.mobile-menu-btn {
+  margin-left: auto;
+}
+.header__btn {
+  width: 160px;
+  height: 44px;
+  background: $whiteTextColor;
+  border-radius: 22px;
+  @media screen and(max-width:767.5px) {
+    display: none;
+  }
 }
