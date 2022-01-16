@@ -1,9 +1,5 @@
-@charset "UTF-8";
 
 
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
  */
 @font-face {
   font-family: 'DM Sans Medium';
@@ -1352,15 +1348,9 @@ textarea:focus {
 }
 /*# sourceMappingURL=main.css.map */
 
-.link {
-  text-decoration: none;
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-}
 
 
 /*# sourceMappingURL=main.css.map */
+
 
