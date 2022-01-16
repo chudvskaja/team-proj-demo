@@ -1,6 +1,119 @@
-.title {
-    font-family: 'DM Sans Bold', sans-serif;
-    font-size: 30px;
-    line-height: 1.17;
-    color: $accentColor;
+
+.about {
+  padding-top: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $primaryBgColor;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+  }
+}
+.about__main {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+.about__titles-about {
+  text-align: center;
+  padding-left: 59px;
+  padding-right: 61px;
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+.about__labl-about {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.166;
+  color: $titlePinkColor;
+
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about__title-about {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accentColor;
+  margin-top: 15px;
+}
+.about__main-specification-about {
+  max-width: 480px;
+  text-align: center;
+  background-image: url(../images/mobile/sectionbg-mob.png),
+    url(../images/mobile/sectionbg-mob-@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    padding-left: 39px;
+  }
+}
+.about__text-first-about {
+  font-family: 'DM Sans Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $blackTextColor;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 46px;
+  margin-bottom: 34px;
+  text-align: left;
+}
+.about__text-second-about {
+  font-family: 'DM Sans Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $primarySmallTextColor;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+}
+.about__text-third-about {
+  font-family: 'DM Sans Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $primarySmallTextColor;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  padding-top: 10px;
+}
+.title-btn-about {
+  display: block;
+  justify-content: center;
+  border-radius: 22px;
+  min-width: 176px;
+  min-height: 44px;
+  border: 1px solid transparent;
+  padding-left: 32px;
+  padding-right: 37.96px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $whiteTextColor;
+  margin-top: 17px;
+  margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-left: 396px;
+  }
 }

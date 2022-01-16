@@ -1,0 +1,13 @@
+.btn {
+  padding: 7px 13px;
+  background: $whiteTextColor;
+  color: $accentColor;
+  text-decoration: none;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $accentColor;
+    color: $whiteTextColor;
+  }
+}
