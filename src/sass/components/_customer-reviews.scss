@@ -1,0 +1,84 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 86px;
+  font-family: 'DM Sans Medium';
+  font-style: normal;
+  color: $blackTextColor;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
+}
+.slick-dots li {
+  list-style: none;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #d31342;
+}
+/* Элемент точки */
+.slick-dots > li > button {
+  display: block;
+  padding: 0;
+  border: none;
+  font-size: 0;
+
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__text {
+  display: block;
+  text-align: center;
+  /* max-width: 157px; */
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  line-height: 2.58;
+  background-image: repeating-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0) 29px,
+    #e1e1e1 0,
+    #e1e1e1 30px
+  );
+  letter-spacing: 0.04em;
+}
+
+.slider__name {
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}

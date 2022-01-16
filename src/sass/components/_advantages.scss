@@ -2,8 +2,9 @@
     background-color: $primaryBgColor;
     padding-top: 39px;
     padding-bottom: 97px;
-
 }
+
+
 
 .facts {
     font-family: 'Titan One', cursiv;
@@ -11,8 +12,17 @@
     line-height: 1.14;
     color: $accentColor;
     display: block;
-    width: 98px;
     margin-bottom: 20px;
+
+    @media screen and (min-width:768px) {
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+
+    @media screen and (min-width:768px) {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
 }
 
 .advantage-description {
@@ -21,17 +31,38 @@
     line-height: 1.7;
     color: $blackTextColor;
     display: inline-block;
-    width: 230px;
+    // width: 230px;
+
+    @media screen and (min-width: 786px) {
+      font-size: 14px;
+
+    }
 
 }
 
 .advantages-item {
     display: block;
-    width: 98px;
+
+    @media screen and (min-width: 768px) {
+      width: 180px;
+}  
+@media screen and (min-width: 1200px) {
+  width: 330px;
+}  
+
 }
 
 .advantage-item:not(:last-child) {
+  @media screen and (max-width:767px) {
     margin-bottom: 38px;
+}
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  margin-right:60px;
+}
+
+@media screen and (min-width: 1200px) {
+  margin-right:30px;
+}
 }
 
 .advantage-item::before {
@@ -44,6 +75,10 @@
     background-position: center;
     border-radius: 4px;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
   }
 
   .cup-milk::before {
@@ -59,4 +94,12 @@
   .cup-heart::before {
     background-image: url(/images/adv3.png);
     background-size: 44px 50px;
+  }
+
+  .list-advantages {
+    @media screen and (min-width:768px) {
+      display: flex;
+    }
+
+    
   }

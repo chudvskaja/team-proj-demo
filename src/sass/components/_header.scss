@@ -1,4 +1,5 @@
 .header {
+
   background-color: $lightPinkColor;
 
   @media screen and (min-width: 320px) {
@@ -60,6 +61,21 @@
     &__burger.active span {
       transform: scale(0);
     }
+
+  background-color: transparent;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  left: 0;
+}
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding-top: 6px;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+
   }
 
   @media screen and (min-width: 768px) {
@@ -72,6 +88,7 @@
       right: 34px;
     }
   }
+
   @media screen and (min-width: 1200px) {
     &__burger {
       display: none;
@@ -168,5 +185,19 @@
   &__btn-section {
     margin-left: auto;
     margin-right: auto;
+}
+.navgation__item {
+  margin-right: 35px;
+}
+.mobile-menu-btn {
+  margin-left: auto;
+}
+.header__btn {
+  width: 160px;
+  height: 44px;
+  background: $whiteTextColor;
+  border-radius: 22px;
+  @media screen and(max-width:767.5px) {
+
   }
 }
