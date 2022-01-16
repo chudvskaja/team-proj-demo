@@ -1,14 +1,12 @@
-.hero__section {
-}
 .hero {
   background-color: $lightPinkColor;
   position: relative;
   padding-top: 58.4px;
   height: 502px;
   overflow: hidden;
-  /*@media screen and (max-width: 768px) {
-    overflow: hidden;
-  }*/
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
 }
 .hero__box {
   position: absolute;
@@ -20,6 +18,8 @@
     top: 31px;
     left: 306px;
   }
+  @media screen and (min-width: 1200px) {
+  }
 
   border-radius: 50%;
   background: $titlePinkColor;
@@ -30,6 +30,11 @@
   top: 50%;
   transform: translateY(-50%);
   width: 218px;
+  @media screen and (min-width: 768px) {
+    top: 0;
+    transform: translateY(0);
+    margin-top: 102px;
+  }
 }
 
 .hero__text {
@@ -55,4 +60,75 @@
   position: absolute;
   top: 9px;
   left: 81px;
+  width: 171px;
+  height: 410px;
+  @media screen and(min-width:768px) {
+    width: 143px;
+    height: 336px;
+    top: 32px;
+    left: 71px;
+  }
+}
+.hero__btn-section {
+  display: flex;
+  margin-top: 19px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+}
+.hero__btn {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.btn-products {
+  margin-right: 8px;
+}
+.hero-milk {
+  display: flex;
+  position: absolute;
+  bottom: 28px;
+  align-items: center;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+}
+.hero-milk__img {
+  width: 124px;
+  height: 126px;
+}
+.hero-milk__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  color: $whiteTextColor;
+  width: 114px;
+}
+.button-arrow {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background: url(//images/arrow-right3-min.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.hero-girl__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 168px;
+  height: 133px;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
 }
