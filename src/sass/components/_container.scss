@@ -16,5 +16,10 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+
+    &-advantage {
+      padding-left:100px;
+      padding-right:100px;
+    }
   }
-}
+  }
