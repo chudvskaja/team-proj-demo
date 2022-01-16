@@ -223,8 +223,21 @@ textarea {
   line-height: 1.14;
   color: #D41443;
   display: block;
-  width: 98px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .facts {
+    font-size: 48px;
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .facts {
+    font-size: 58px;
+    margin-bottom: 15px;
+  }
 }
 
 .advantage-description {
@@ -233,16 +246,46 @@ textarea {
   line-height: 1.7;
   color: #000000;
   display: inline-block;
-  width: 230px;
+}
+
+@media screen and (min-width: 786px) {
+  .advantage-description {
+    font-size: 14px;
+  }
 }
 
 .advantages-item {
   display: block;
-  width: 98px;
 }
 
-.advantage-item:not(:last-child) {
-  margin-bottom: 38px;
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-item {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantage-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage-item:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-item::before {
@@ -255,6 +298,12 @@ textarea {
   background-position: center;
   border-radius: 4px;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-item::before {
+    margin-bottom: 36px;
+  }
 }
 
 .cup-milk::before {
@@ -270,6 +319,14 @@ textarea {
 .cup-heart::before {
   background-image: url(/images/adv3.png);
   background-size: 44px 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contacts {
@@ -395,6 +452,10 @@ textarea {
   .container {
     width: 1200px;
   }
+  .container-advantage {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .reviews__title {
@@ -412,7 +473,7 @@ textarea {
 .header {
   background-color: transparent;
   position: absolute;
-  z-index: 90;
+  z-index: 3;
   right: 0;
   left: 0;
 }
@@ -474,9 +535,12 @@ textarea {
   padding-top: 58.4px;
   height: 502px;
   overflow: hidden;
-  /*@media screen and (max-width: 768px) {
-    overflow: hidden;
-  }*/
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 399px;
+  }
 }
 
 .hero__box {
@@ -504,6 +568,15 @@ textarea {
   width: 218px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-top: 102px;
+  }
+}
+
 .hero__text {
   font-family: Titan One;
   font-style: normal;
@@ -529,6 +602,17 @@ textarea {
   position: absolute;
   top: 9px;
   left: 81px;
+  width: 171px;
+  height: 410px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-icecream__img {
+    width: 143px;
+    height: 336px;
+    top: 32px;
+    left: 71px;
+  }
 }
 
 .hero__btn-section {
@@ -536,6 +620,12 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   margin-top: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__btn-section {
+    margin-top: 20px;
+  }
 }
 
 .hero__btn {
@@ -555,6 +645,64 @@ textarea {
 
 .btn-products {
   margin-right: 8px;
+}
+
+.hero-milk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767.5px) {
+  .hero-milk {
+    display: none;
+  }
+}
+
+.hero-milk__img {
+  width: 124px;
+  height: 126px;
+}
+
+.hero-milk__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  width: 114px;
+}
+
+.button-arrow {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background: url(//images/arrow-right3-min.png);
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.hero-girl__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 168px;
+  height: 133px;
+}
+
+@media screen and (max-width: 767.5px) {
+  .hero-girl__img {
+    display: none;
+  }
 }
 
 .modal {
