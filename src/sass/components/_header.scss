@@ -186,8 +186,18 @@
     margin-left: auto;
     margin-right: auto;
 }
-.navgation__item {
+.navigation__item {
   margin-right: 35px;
+}
+.navigation__link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  color: $whiteTextColor;
 }
 .mobile-menu-btn {
   margin-left: auto;
