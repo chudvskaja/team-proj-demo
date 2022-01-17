@@ -13,7 +13,6 @@
 }
 .hero {
   background-color: $lightPinkColor;
-
 }
 .hero__box {
   position: absolute;
@@ -113,18 +112,16 @@
     top: 56px;
     left: 119px;
   }
-
 }
 .hero__btn-section {
   display: flex;
   margin-top: 19px;
   @media screen and (min-width: 768px) {
     margin-top: 20px;
-
+  }
   @media screen and (min-width: 1200px) {
     margin-top: 25px;
   }
-
 }
 .hero__btn {
   font-family: DM Sans;
@@ -290,48 +287,4 @@
     width: 293px;
     height: 232px;
   }
-}
-.hero-milk {
-  display: flex;
-  position: absolute;
-  bottom: 28px;
-  align-items: center;
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-}
-.hero-milk__img {
-  width: 124px;
-  height: 126px;
-}
-.hero-milk__text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.5;
-  color: $whiteTextColor;
-  width: 114px;
-}
-.button-arrow {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: none;
-  background: url(//images/arrow-right3-min.png);
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
-.hero-girl__img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 168px;
-  height: 133px;
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-}
 }
