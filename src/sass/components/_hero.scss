@@ -1,5 +1,4 @@
-.hero {
-  background-color: $lightPinkColor;
+.hero__section {
   position: relative;
   padding-top: 58.4px;
   height: 502px;
@@ -10,6 +9,9 @@
   @media screen and (min-width: 1200px) {
     height: 665px;
   }
+}
+.hero {
+  background-color: $lightPinkColor;
 }
 .hero__box {
   position: absolute;
@@ -194,12 +196,13 @@
   flex-direction: column;
   position: absolute;
   top: 94px;
-  right: 0;
+  right: 44px;
   @media screen and (max-width: 767.5px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
     top: 156px;
+    right: 115px;
   }
 }
 .service-point__item {
