@@ -1,30 +1,8 @@
 .footer {
-  background-color: $titlePinkColor;
+  background-color: $primaryBgColor;
 }
-
-
-
-.list {
-  list-style: none;
-}
-.link {
-  text-decoration: none;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.join-social-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background-color: $titlePinkColor;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.footer-title {
+  padding-left: 5px;
 }
 
 .footer-title-one {
@@ -49,17 +27,88 @@ ul {
 }
 
 .footer-social {
-  padding-left: 147px;
+  margin-top: 44px;
+  padding-left: 135px;
 }
+
+.join-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $whiteTextColor;
+  background-color: $titlePinkColor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-social-link:hover,
+.join-social-link:focus {
+  background-color: $accentColor;
+  color: $whiteTextColor;
+}
+
+.join-social-item {
+  width: 32px;
+  height: 32px;
+  margin-right: 28px;
+}
+
+.join-social-item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.join-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.join-social-icon {
+  fill: $accentColor;
+}
+
 .footer-contact {
-  padding-left: 70px ;
+  margin-top: 46px;
+  padding-bottom: 43px;
+
+  padding-left: 70px;
+}
+
+.contact-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: $blackTextColor;
+}
+
+.contact-number {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+  text-align: right;
+  color: $accentColor;
 }
 
 .copy {
+  background-color: $primaryBgColor;
 
+  border-top: 1px solid #e1e1e1;
+}
+
+.copy-text {
+  font-family: DM Sans;
+  color: $primarySmallTextColor;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  padding-top: 22px;
+  padding-bottom: 25px;
 }
