@@ -1,6 +1,6 @@
 .hero__section {
   position: relative;
-  padding-top: 58.4px;
+  // padding-top: 58.4px;
   height: 502px;
   overflow: hidden;
   @media screen and (min-width: 768px) {
@@ -11,34 +11,35 @@
     height: 665px;
   }
 }
+
 .hero {
   background-color: $lightPinkColor;
 
 }
+
 .hero__box {
   position: absolute;
   top: 83px;
   right: -62px;
   width: 346px;
   height: 344px;
+  border-radius: 50%;
+  background: $titlePinkColor;
+
   @media screen and (min-width: 768px) {
-    top: 31px;
-    left: 306px;
+    top: 0px;
+    left: 292px;
     width: 324px;
     height: 322px;
   }
+
   @media screen and (min-width: 1200px) {
-    top: 108px;
-    left: 594px;
+    top: 0px;
+    left: 460px;
     width: 538px;
     height: 538px;
   }
 
-  @media screen and (min-width: 1200px) {
-  }
-
-  border-radius: 50%;
-  background: $titlePinkColor;
 }
 
 .hero__title {
@@ -46,16 +47,21 @@
   top: 50%;
   transform: translateY(-50%);
   width: 218px;
+  // top: 84px;
+  // left: 100px;
+
   @media screen and (min-width: 768px) {
     top: 0;
-    transform: translateY(0);
-    margin-top: 102px;
+    // transform: translateY(0);
+    // margin-top: 102px;
 
     width: 162px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 171px;
+    top: 171px;
+    left: 100px;
     width: 277px;
+    // transform: translateY(-50%);
   }
 }
 
@@ -77,6 +83,7 @@
     line-height: 1.16;
   }
 }
+
 .hero__text--different {
   font-family: Titan One;
   font-style: normal;
@@ -113,19 +120,20 @@
     top: 56px;
     left: 119px;
   }
-
 }
+
 .hero__btn-section {
   display: flex;
   margin-top: 19px;
   @media screen and (min-width: 768px) {
     margin-top: 20px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-top: 25px;
   }
-
 }
+
 .hero__btn {
   font-family: DM Sans;
   font-style: normal;
@@ -140,36 +148,48 @@
     line-height: 1.29;
   }
 }
+
 .btn-products {
   margin-right: 8px;
   @media screen and (min-width: 1200px) {
     margin-right: 17px;
   }
 }
+
+
 .hero-milk {
+  
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
+  @media screen and (min-width:768px) {
   display: flex;
   position: absolute;
   bottom: 28px;
   align-items: flex-end;
-  @media screen and (max-width: 767.5px) {
-    display: none;
   }
+  
   @media screen and (min-width: 1200px) {
     bottom: 45px;
   }
 }
+
 .hero-milk__img {
   width: 124px;
   height: 126px;
+
   @media screen and (min-width: 1200px) {
     width: 188px;
     height: 191px;
   }
 }
+
 .milk-text-section {
   display: flex;
   flex-direction: column;
 }
+
 .hero-milk__text {
   font-family: DM Sans;
   font-style: normal;
@@ -178,12 +198,36 @@
   line-height: 1.5;
   color: $whiteTextColor;
   width: 114px;
+
   @media screen and (min-width: 1200px) {
     width: 200px;
     font-size: 14px;
     line-height: 1.43;
   }
 }
+
+
+
+.hero-girl__img {
+
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
+  @media screen and (min-width:768px) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 168px;
+  height: 133px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 293px;
+    height: 232px;
+  }
+}
+
 .button-arrow {
   margin-top: 7px;
   margin-bottom: 6px;
@@ -201,21 +245,42 @@
     height: 26px;
   }
 }
-.service-point {
+
+  // .button-arrow {
+  //   width: 18px;
+  //   height: 18px;
+  //   border-radius: 50%;
+  //   border: none;
+  //   background: url(//images/arrow-right3-min.png);
+  //   background-position: 50% 50%;
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   background-color: #fff;
+  // }
+
+
+  .service-point {
+
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
+  @media screen and (min-width:768px) {
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 94px;
   right: 44px;
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
+}
+ 
   @media screen and (min-width: 1200px) {
     top: 156px;
     right: 115px;
   }
 }
+
 .service-point__item {
+ 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -225,6 +290,7 @@
     flex-basis: 70px;
   }
 }
+
 .service-point__item:not(:last-child) {
   margin-bottom: 13px;
   @media screen and (min-width: 1200px) {
@@ -277,61 +343,4 @@
   }
 }
 
-.hero-girl__img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 168px;
-  height: 133px;
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 293px;
-    height: 232px;
-  }
-}
-.hero-milk {
-  display: flex;
-  position: absolute;
-  bottom: 28px;
-  align-items: center;
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-}
-.hero-milk__img {
-  width: 124px;
-  height: 126px;
-}
-.hero-milk__text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.5;
-  color: $whiteTextColor;
-  width: 114px;
-}
-.button-arrow {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: none;
-  background: url(//images/arrow-right3-min.png);
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
-.hero-girl__img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 168px;
-  height: 133px;
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-}
-}
+
