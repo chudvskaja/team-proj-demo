@@ -93,7 +93,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
+  .about__main {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .about__main {
     max-width: 1280px;
     background-repeat: no-repeat;
@@ -103,7 +109,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .about__main {
     background-image: url(../images/desctop/sectionbg-desctop@2x.png);
   }
@@ -355,6 +361,104 @@ textarea {
 
 #more {
   display: none;
+}
+
+.backdrop-about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+  visibility: visible;
+  opacity: 1;
+  z-index: 6;
+}
+
+.modal-about {
+  max-width: 450px;
+  min-height: 609px;
+  background-color: #fff;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  padding: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  -webkit-transition: -webkit-transform 250ms, -webkit-perspective-origin 250ms;
+  transition: -webkit-transform 250ms, -webkit-perspective-origin 250ms;
+  transition: transform 250ms, perspective-origin 250ms;
+  transition: transform 250ms, perspective-origin 250ms, -webkit-transform 250ms, -webkit-perspective-origin 250ms;
+  overflow: scroll;
+}
+
+.backdrop .is-hidden .modal-about {
+  -webkit-transform: scale(1.5) rotate(180deg);
+          transform: scale(1.5) rotate(180deg);
+  -webkit-transition: -webkit-transform 250ms perspective-origin 250ms;
+  transition: -webkit-transform 250ms perspective-origin 250ms;
+  transition: transform 250ms perspective-origin 250ms;
+  transition: transform 250ms perspective-origin 250ms, -webkit-transform 250ms perspective-origin 250ms;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-about {
+    min-width: 528px;
+    height: 581px;
+    overflow: hidden;
+  }
+}
+
+.modal-about-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.292);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-right: 12px;
+  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: border-color 250ms;
+  transition: border-color 250ms;
+}
+
+.modal-form-input:focus + .icone-modal-form {
+  fill: var(--accent-color);
 }
 
 .advantages {
