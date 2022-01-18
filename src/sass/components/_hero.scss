@@ -1,10 +1,11 @@
 .hero__section {
   position: relative;
-  // padding-top: 58.4px;
+  padding-top: 58.4px;
   height: 502px;
   overflow: hidden;
   @media screen and (min-width: 768px) {
     height: 399px;
+    padding-top: 87px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -14,54 +15,48 @@
 
 .hero {
   background-color: $lightPinkColor;
-
 }
 
 .hero__box {
   position: absolute;
   top: 83px;
-  right: -62px;
+  left: 36px;
   width: 346px;
   height: 344px;
   border-radius: 50%;
   background: $titlePinkColor;
 
   @media screen and (min-width: 768px) {
-    top: 0px;
-    left: 292px;
+    top: 31px;
+    left: 307px;
     width: 324px;
     height: 322px;
   }
 
   @media screen and (min-width: 1200px) {
-    top: 0px;
-    left: 460px;
+    top: 52px;
+    left: 475px;
     width: 538px;
     height: 538px;
   }
-
 }
 
 .hero__title {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
   width: 218px;
-  // top: 84px;
-  // left: 100px;
+  top: 102px;
+  left: 20px;
 
   @media screen and (min-width: 768px) {
-    top: 0;
-    // transform: translateY(0);
-    // margin-top: 102px;
-
+    top: 102;
+    left: 34px;
     width: 162px;
   }
   @media screen and (min-width: 1200px) {
     top: 171px;
-    left: 100px;
+    left: 115px;
     width: 277px;
-    // transform: translateY(-50%);
   }
 }
 
@@ -152,22 +147,22 @@
   }
 }
 
-
 .hero-milk {
-  
   @media screen and (max-width: 767.5px) {
     display: none;
   }
 
-  @media screen and (min-width:768px) {
-  display: flex;
-  position: absolute;
-  bottom: 28px;
-  align-items: flex-end;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    position: absolute;
+    bottom: 28px;
+    left: 34px;
+    align-items: flex-end;
   }
-  
+
   @media screen and (min-width: 1200px) {
     bottom: 45px;
+    left: 77px;
   }
 }
 
@@ -184,12 +179,14 @@
 .milk-text-section {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .hero-milk__text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'DM Sans Regular';
   font-size: 8px;
   line-height: 1.5;
   color: $whiteTextColor;
@@ -202,25 +199,23 @@
   }
 }
 
-
-
 .hero-girl__img {
-
   @media screen and (max-width: 767.5px) {
     display: none;
   }
 
-  @media screen and (min-width:768px) {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 168px;
-  height: 133px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+    width: 168px;
+    height: 133px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     width: 293px;
     height: 232px;
+    right: 109px;
   }
 }
 
@@ -239,36 +234,22 @@
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 26px;
+    margin-top: 20px;
   }
 }
-
-  // .button-arrow {
-  //   width: 18px;
-  //   height: 18px;
-  //   border-radius: 50%;
-  //   border: none;
-  //   background: url(//images/arrow-right3-min.png);
-  //   background-position: 50% 50%;
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-color: #fff;
-  // }
-
-
-  .service-point {
-
+.service-point {
   @media screen and (max-width: 767.5px) {
     display: none;
   }
 
-  @media screen and (min-width:768px) {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 94px;
-  right: 44px;
-}
- 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 94px;
+    right: 42px;
+  }
+
   @media screen and (min-width: 1200px) {
     top: 156px;
     right: 115px;
@@ -276,7 +257,6 @@
 }
 
 .service-point__item {
- 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -294,14 +274,13 @@
   }
 }
 .service-point__number {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Titan One';
   font-size: 28px;
   line-height: 1.14;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  z-index: 10;
   color: $accentColor;
   @media screen and (min-width: 1200px) {
     font-size: 46px;
@@ -310,7 +289,7 @@
   &::before {
     content: '';
     position: absolute;
-    z-index: 5;
+    z-index: -5;
     top: -2px;
     right: -8px;
     width: 16px;
@@ -326,9 +305,7 @@
   }
 }
 .service-point__text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'DM Sans';
   font-size: 8px;
   line-height: 10px;
   text-align: right;
@@ -338,5 +315,3 @@
     line-height: 1.3;
   }
 }
-
-
