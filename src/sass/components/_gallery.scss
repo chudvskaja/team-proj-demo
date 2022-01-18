@@ -7,22 +7,26 @@
 .gallery__items {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 70px;
+  grid-template-columns: repeat(10, 1fr);
+  padding: 80px;
 }
 .gallery__item img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.gallery__item {
-  position: relative;
-  padding: 0px 0px 85% 0px;
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  transition: transform 250ms linear;
 }
-.gallery__item__big {
-  grid-column: span 2;
-  grid-row: span 2;
+.gallery__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  transition: transform 250ms linear;
 }
