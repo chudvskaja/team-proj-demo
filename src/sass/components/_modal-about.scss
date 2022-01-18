@@ -1,0 +1,66 @@
+.backdrop-about {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+  opacity: 1;
+  z-index: 6;
+}
+
+.modal-about {
+  min-width: 300px;
+  min-height: 609px;
+  background-color: $accentColor;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  padding: 40px;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: transform 250ms, perspective-origin 250ms;
+  overflow: scroll;
+  scro .backdrop .is-hidden & {
+    transform: scale(1.5) rotate(180deg);
+    transition: transform 250ms perspective-origin 250ms;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    height: 581px;
+    overflow: hidden;
+  }
+}
+
+.modal-about-close {
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.292);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.text-modal-about {
+  font-family: 'DM Sans Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $blackTextColor;
+  text-align: center;
+}
