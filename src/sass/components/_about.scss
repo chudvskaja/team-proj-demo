@@ -1,7 +1,5 @@
 .about {
   padding-top: 125px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: $primaryBgColor;
 
   @media screen and (min-width: 768px) {
@@ -14,16 +12,9 @@
 
 .about__main {
   max-width: 480px;
-  background-repeat: no-repeat;
-  background-image: url(../images/mobile/sectionbg-mob.png);
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/sectionbg-mob-@2x.png);
-  }
-  background-size: contain;
-  background-position: 0px 710px;
 
   @media screen and (min-width: 768px) {
+    max-width: 768px;
     background-image: none;
   }
 
@@ -37,12 +28,12 @@
     }
     background-size: contain;
     background-position: 0px 275px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .about__titles-about {
   text-align: center;
-  padding-left: 59px;
-  padding-right: 61px;
   margin-bottom: 26px;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
@@ -100,25 +91,34 @@
     max-width: 768px;
     display: flex;
     padding-left: 39px;
-    background-image: none;
 
     margin: 0;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1280px;
-    padding-left: 112px;
+    padding-left: 97px;
   }
 }
 .about__text {
+  max-width: 480px;
+  background-repeat: no-repeat;
+  background-image: url(../images/mobile/sectionbg-mob.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/sectionbg-mob-@2x.png);
+  }
+  background-size: contain;
+  background-position: bottom;
   @media screen and (min-width: 768px) {
+    max-width: 768px;
     padding-top: 50px;
     margin-left: 17px;
-    padding-right: 36px;
+    background-image: none;
   }
   @media screen and (min-width: 1200px) {
+    max-width: 1280px;
     margin-left: 74px;
-    padding-right: 115px;
-    margin-right: 0;
+    padding-right: 50px;
   }
 }
 
@@ -216,7 +216,4 @@
   @media screen and (min-width: 1200px) {
     margin-top: 45px;
   }
-}
-#more {
-  display: none;
 }
