@@ -27,6 +27,11 @@
   }
 }
 
+.contacts-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .contacts__list {
   display: flex;
   flex-direction: column;

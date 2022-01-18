@@ -3,8 +3,9 @@
 }
 .footer-title {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
+
   @media screen and (min-width: 768px) {
     min-width: 340px;
     padding-top: 7px;
@@ -15,22 +16,26 @@
   font-family: 'Titan One';
   padding-left: 5px;
   padding-bottom: 17px;
+
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   color: $titlePinkColor;
+  max-width: 250px;
   @media screen and (min-width: 768px) {
     font-family: 'Titan One';
     font-size: 26px;
     line-height: 30px;
     letter-spacing: 0.04em;
     padding-left: 21px;
+    max-width: 440px;
   }
   @media screen and (min-width: 1200px) {
     padding-left: 60px;
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
+    max-width: none;
   }
 }
 
@@ -58,6 +63,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  br {
+    display: none;
+  }
+}
+
 .footer-social {
   margin-top: 44px;
   padding-left: 135px;
@@ -81,6 +92,7 @@
   color: $whiteTextColor;
   background-color: $titlePinkColor;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: $accentColor;
@@ -88,14 +100,26 @@
   }
 }
 
+.github-logo {
+  padding-right: 1px;
+  padding-bottom: 1px;
+}
+
+.telegram-logo {
+  padding-right: 3px;
+}
+
+.facebook-logo {
+  padding-left: 1px;
+}
+
 .join-social-item {
   width: 32px;
   height: 32px;
   margin-right: 28px;
-}
-
-.join-social-item:nth-child(3n + 3) {
-  margin-right: 0px;
+  &:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
 }
 
 .join-social-list {
