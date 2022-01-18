@@ -3,16 +3,25 @@
   background: $whiteTextColor;
   color: $accentColor;
   text-decoration: none;
-  border-radius: 22px;
+  border-radius: 20px;
   border: none;
   cursor: pointer;
+  align-items: center;
+  text-align: center;
   &:hover {
-    background-color: $accentColor;
-    color: $whiteTextColor;
+    background-color: $btnAccentColor;
   }
 }
 
 .btn--pink {
-  background: #d41342;
+  padding: 7px 13px;
+  background: $accentColor;
   color: $whiteTextColor;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: #c7133e;
+  }
 }
