@@ -274,10 +274,13 @@
     cursor: pointer;
     width: 160px;
     height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       background-color: $accentColor;
-      color: $whiteTextColor;
+      // color: $whiteTextColor;
     }
   }
 }
