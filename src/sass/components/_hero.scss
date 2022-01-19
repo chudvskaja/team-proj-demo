@@ -25,12 +25,18 @@
   height: 344px;
   border-radius: 50%;
   background: $titlePinkColor;
+  animation-name: Appearance;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
 
   @media screen and (min-width: 768px) {
     top: 31px;
     left: 307px;
     width: 324px;
     height: 322px;
+    animation-name: Appearance;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
   }
 
   @media screen and (min-width: 1200px) {
@@ -38,6 +44,29 @@
     left: 435px;
     width: 538px;
     height: 538px;
+    transform: translateY(-50%, -50%);
+    animation-name: Appearance;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+  }
+  @-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-o-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-moz-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
 }
 
@@ -101,6 +130,8 @@
   left: 81px;
   width: 171px;
   height: 410px;
+  
+
   @media screen and(min-width:768px) {
     width: 143px;
     height: 336px;
@@ -113,6 +144,7 @@
     height: 557px;
     top: 56px;
     left: 119px;
+    
   }
 }
 
@@ -143,8 +175,22 @@
 
 .btn-products {
   margin-right: 8px;
+  width: 62.4px;
+  height: 24px;
   @media screen and (min-width: 1200px) {
     margin-right: 17px;
+    width: 104px;
+    height: 40px;
+  }
+}
+
+.btn-about {
+  width: 83px;
+  height: 24px;
+  @media screen and (min-width: 1200px) {
+    
+    width: 138px;
+    height: 40px;
   }
 }
 
@@ -159,11 +205,36 @@
     bottom: 28px;
     left: 34px;
     align-items: flex-end;
+    animation-name: Appearance;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
   }
 
   @media screen and (min-width: 1200px) {
     bottom: 45px;
     left: 77px;
+    animation-name: Appearance;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+  }
+  @-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-o-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-moz-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
 }
 
@@ -174,6 +245,9 @@
   @media screen and (min-width: 1200px) {
     width: 188px;
     height: 191px;
+    animation-name: Appearance;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
   }
 }
 
@@ -211,12 +285,38 @@
     right: 34px;
     width: 168px;
     height: 133px;
+    animation-name: Appearance;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
   }
 
   @media screen and (min-width: 1200px) {
     width: 293px;
     height: 232px;
     right: 69px;
+    animation-name: Appearance;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+
+  }
+  @-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-o-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-moz-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
 }
 
