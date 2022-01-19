@@ -246,6 +246,7 @@
   display: flex;
   align-items: center;
   color: $whiteTextColor;
+  
   &:hover,
   &:focus {
     color: $accentColor;
@@ -278,7 +279,8 @@
     justify-content: center;
     align-items: center;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $accentColor;
       // color: $whiteTextColor;
     }
