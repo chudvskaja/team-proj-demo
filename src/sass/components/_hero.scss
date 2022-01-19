@@ -43,22 +43,23 @@
 
 .hero__title {
   position: absolute;
-
-  width: 218px;
-  top: 102px;
+  top: 193px;
   left: 20px;
+  width: 218px;
 
   @media screen and (min-width: 768px) {
-    top: 102;
+    top: 102px;
     left: 34px;
     width: 162px;
   }
+
   @media screen and (min-width: 1200px) {
     top: 171px;
     left: 115px;
     width: 277px;
   }
 }
+
 
 .hero__text {
   font-family: 'Titan One';
