@@ -12,9 +12,9 @@
         />
       </picture>
     </div>
-    <div class="header__burger">
+    <!-- <div class="header__burger">
       <span></span>
-    </div>
+    </div> -->
 
     <nav class="header__navigation">
       <ul class="navigation__list list">
@@ -35,9 +35,28 @@
         </li>
       </ul>
     </nav>
-    <button class="header__btn btn" type="button" data-modal-open>Buy now ></button>
+    <button type="button" class="menu-button-open" aria-expanded="true">
+      <svg class="open-icon"
+      width="40" height="40">
+      <use class="" href="./images/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <!-- <button class="header__btn btn" type="button" data-modal-open>Buy now ></button> -->
+    <button class="header__btn btn" type="button" data-modal-open>
+      Buy now
+      <svg class="contact-btn__icon--pink" width="7" height="11" >
+        <use href="./images/sprite.svg#icon-arrow-pink"></use>
+      </svg>
+    </button>
 
-    <div class="header__list">
+    <div class="header__list is-hidden">
+      <button type="button" 
+          class="menu-button-close" header_list>
+            <svg 
+            width="20" height="20">
+              <use class="close-cross" href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
       <button class="header__mob-btn btn" type="button" data-modal-open>Buy now ></button>
       <ul class="list">
         <li class="header__item">
