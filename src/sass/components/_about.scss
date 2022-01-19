@@ -12,6 +12,16 @@
 
 .about__main {
   max-width: 480px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-repeat: no-repeat;
+  background-image: url(../images/mobile/sectionbg-mob.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/sectionbg-mob-@2x.png);
+  }
+  background-size: contain;
+  background-position: bottom;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
@@ -27,7 +37,7 @@
       background-image: url(../images/desctop/sectionbg-desctop@2x.png);
     }
     background-size: contain;
-    background-position: 0px 275px;
+    background-position: 0px 215px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -90,9 +100,7 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     display: flex;
-    padding-left: 39px;
-
-    margin: 0;
+    padding-left: 24px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1280px;
@@ -101,19 +109,14 @@
 }
 .about__text {
   max-width: 480px;
-  background-repeat: no-repeat;
-  background-image: url(../images/mobile/sectionbg-mob.png);
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/sectionbg-mob-@2x.png);
-  }
-  background-size: contain;
-  background-position: bottom;
+  padding-left: 35px;
+  padding-right: 35px;
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-top: 50px;
     margin-left: 17px;
-    background-image: none;
+    padding-left: 0;
+    padding-right: 0;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1280px;
@@ -129,9 +132,6 @@
   font-size: 12px;
   line-height: 1.583;
   color: $blackTextColor;
-
-  padding-left: 50px;
-  padding-right: 50px;
   margin-top: 46px;
   margin-bottom: 32px;
   text-align: left;
@@ -155,9 +155,6 @@
   font-size: 12px;
   line-height: 1.58;
   color: $primarySmallTextColor;
-
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: left;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -175,9 +172,6 @@
   font-size: 12px;
   line-height: 1.58;
   color: $primarySmallTextColor;
-
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: left;
   padding-top: 10px;
   @media screen and (min-width: 768px) {
@@ -192,28 +186,42 @@
 .title-btn-about {
   display: block;
   justify-content: center;
+  align-items: center;
   border-radius: 22px;
   min-width: 176px;
   min-height: 44px;
   border: 1px solid transparent;
-  padding-left: 32px;
-  padding-right: 37.96px;
+  padding-left: 37px;
+  padding-right: 37px;
   padding-top: 0;
   padding-bottom: 0;
   background-color: $whiteTextColor;
   margin-top: 17px;
-  margin-left: 50px;
+  font-family: 'DM Sans Bold';
+  font-size: 14px;
+  line-height: 1.285;
+  color: $accentColor;
+
   cursor: pointer;
   &:hover,
   &:focus {
     background-color: $btnAccentColor;
-    box-shadow: 0px, 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.312;
+
     margin-top: 62px;
     margin-left: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 45px;
   }
+}
+.about-btn__icon {
+  align-items: center;
+  justify-content: center;
+  fill: $accentColor;
+  margin-left: 13px;
 }
