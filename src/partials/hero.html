@@ -1,6 +1,6 @@
 <section class="hero">
   <div class="hero__section container">
-    <div class="hero__box">
+    <div class="hero__box animated bounceInDown">
       <picture>
         <source
           srcset="
@@ -23,24 +23,16 @@
         <img class="hero-icecream__img" src="images/mobile/ice-cream-hero1x.png" alt="icecream" />
       </picture>
     </div>
-    <div class="hero__title">
+    <div class="hero__title animated bounceInRight">
       <h1 class="hero__text">
         ice cream made with <span class="hero__text--different"> passion</span>
       </h1>
       <div class="hero__btn-section">
-        <button
-          class="hero__btn btn-products btn btn--pink"
-          href="/src/partials/products.html"
-          type="button"
-        >
-          Products
-        </button>
-        <button class="hero__btn btn" href="/src/partials/about.html" type="button">
-          How it’s made?
-        </button>
+        <a class="hero__btn btn-products btn btn--pink" href="#products">Products</a>
+        <a class="hero__btn btn" href="#made">How it’s made?</a>
       </div>
     </div>
-    <div class="hero-milk">
+    <div class="hero-milk animated bounceInUp">
       <picture>
         <source
           srcset="
@@ -63,10 +55,10 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button class="button-arrow" type="button" />
+        <button class="button-arrow" type="button"></button>
       </div>
     </div>
-    <picture class="hero-girl__img">
+    <picture class="hero-girl__img animated bounceInUp">
       <source
         srcset="
           images/desctop/desctop-girl-hero1x-min.png 1x,
@@ -84,7 +76,7 @@
       <img src="images/tablet/tablet-girl-hero1x-min.png" alt="girl" />
     </picture>
 
-    <ul class="service-point list">
+    <ul class="service-point list animated bounceInLeft">
       <li class="service-point__item">
         <span class="service-point__number">16</span>
         <span class="service-point__text">cafes</span>

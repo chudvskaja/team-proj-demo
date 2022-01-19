@@ -47,3 +47,12 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
+* {
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
