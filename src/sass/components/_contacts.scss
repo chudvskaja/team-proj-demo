@@ -3,7 +3,7 @@
   width: 100%;
   height: auto;
   margin: 0;
-  padding-bottom: 113px;
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -12,11 +12,9 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 33px;
-    padding-bottom: 158px;
     background-image: linear-gradient(to bottom, #fff 15%, #fff5f6 15%, #fff5f6 85%);
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 165px;
     padding-top: 46px;
     background-image: url(../images/desctop/desctop-contacts-x1.png),
       linear-gradient(to bottom, #fff 15%, #fff5f6 15%, #fff5f6 85%);
